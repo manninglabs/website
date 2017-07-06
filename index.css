@@ -86,7 +86,7 @@ div.link {
 }
 /* end section#services */
 
-/*slider*/
+/* slider */
 .sl img {
     max-width: 100%;
     height: auto;
@@ -95,6 +95,7 @@ div.link {
     outline: none;
     cursor: pointer;
 }
+/* classes from library(slick) */
 .slick-current img{
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -135,4 +136,5 @@ div.link {
 .slick-next {
     right: -50px;
 }
-/*end slider*/
+/* end classes from library(slick) */
+/* end slider */
