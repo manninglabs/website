@@ -7,11 +7,12 @@ section {
     padding-right: 110px;
 }
 h1 {
-    font-size: 450%;
+    font-size: 480%;
     font-weight: 900;
     line-height: 0.8;
     letter-spacing: 1.6px;
     color: #000000;
+    margin-top: 100px;
     margin-bottom: 10px;
     margin-left: -3px;
 }
@@ -25,7 +26,7 @@ h2 {
     font-weight: 900;
     letter-spacing: 2.1px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 0px;
 }
 h3 {
@@ -34,14 +35,25 @@ h3 {
     letter-spacing: 1.7px;
     margin-bottom: 5px;
 }
-#services .intro {
+.intro {
     text-align: center;
+}
+a {
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 100%;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    background-color: #ff5337;
+    padding: 10px 50px;
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 /* section#hero */
 @media screen and (max-width: 1050px) {
-    h1 {
-        font-size: 380%;
-    }
+    
 }
 #hero {
     background-image: url("assets/image%403x.png");
@@ -53,18 +65,6 @@ h3 {
     font-size: 200%;
     margin-top: 0px;
     margin-bottom: 30px;
-}
-a {
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 85%;
-    font-weight: 100;
-    letter-spacing: 1.2px;
-    background-color: #ff5337;
-    padding: 7px 40px 7px 40px;
-    color: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    margin-top: 50px;
 }
 /* end section#hero */
 
@@ -81,7 +81,58 @@ p.intro {
     padding-right: 30px;
     margin-bottom: 30px;
 }
-#services div#link {
+div.link {
     text-align: center;
 }
 /* end section#services */
+
+/*slider*/
+.sl img {
+    max-width: 100%;
+    height: auto;
+}
+.sl1, .sl2, .sl3, .sl4 {
+    outline: none;
+    cursor: pointer;
+}
+.slick-current img{
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%; 
+    background-color: #d8d8d8; 
+    transition: background .5s; 
+}
+.slick-dots li button:before {
+    content: '';
+}
+.slick-dots li.slick-active button,
+.slick-dots li button:hover {
+    background-color: #ff5337; 
+    border: 1px solid #ff5337;
+}
+.sl p {
+    text-align: center;
+}
+.slick-prev, .slick-next {
+    top: 44%;
+    width: 32px;
+    height: 32px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 32px;
+    color:  #d8d8d8;
+}
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: #ff5337;
+}
+.slick-prev {
+    left: -50px;
+}
+.slick-next {
+    right: -50px;
+}
+/*end slider*/
