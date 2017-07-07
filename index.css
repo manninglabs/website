@@ -32,13 +32,13 @@ h2 {
 h3 {
     font-size: 100%;
     font-weight: 900;
-    letter-spacing: 1.7px;
+    letter-spacing: 2px;
     margin-bottom: 5px;
 }
 .intro {
     text-align: center;
 }
-a {
+a.button {
     text-decoration: none;
     border-radius: 50px;
     font-size: 100%;
@@ -79,7 +79,8 @@ p.subtitle {
 p.intro {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 div.link {
     text-align: center;
@@ -87,7 +88,7 @@ div.link {
 /* end section#services */
 
 /* slider */
-.sl img {
+#our-projects .slider-for-projects img {
     max-width: 100%;
     height: auto;
 }
@@ -96,7 +97,7 @@ div.link {
     cursor: pointer;
 }
 /* classes from library(slick) */
-.slick-current img{
+#our-projects .slick-current img{
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 .slick-dots li button {
@@ -115,7 +116,7 @@ div.link {
     background-color: #ff5337; 
     border: 1px solid #ff5337;
 }
-.sl p {
+#our-projects .slider-for-projects p {
     text-align: center;
 }
 .slick-prev, .slick-next {
@@ -138,3 +139,104 @@ div.link {
 }
 /* end classes from library(slick) */
 /* end slider */
+
+/* partners */
+#partners ul {
+    column-count: 3;
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+#partners li {
+    margin-bottom: 10px;
+}
+
+/* end partners */
+
+/* our-team */
+.info-about-employee .social-media-icons {
+    text-align: right;
+}
+.info-about-employee .social-media-icons i {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.info-about-employee hr {
+    height: 2px;
+    background-color: #979797;
+    border: 0px;
+}
+.position-in-company {
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: #979797;
+    margin: 0px;
+}
+/* end our-team */
+
+/* testimonials */
+#testimonials #info {
+    background-color: #f5f3f6;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#testimonials h3,
+#testimonials p {
+    text-align: center;
+}
+#testimonials h3 {
+    padding-top: 100px;
+}
+#testimonials img {
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: -100px;
+
+}
+/* end testimonials */
+/* FAQ */
+#accordeon div {
+    margin-bottom: 20px;
+    background-color: #f5f3f6;
+    padding: 30px 70px;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* end FAQ */
+
+/* footer */
+footer {
+    background-color: #f5f3f6;
+}
+footer h2 {
+    padding-top: 40px;
+}
+footer p {
+    font-size: 30px;
+    letter-spacing: 2.1px;
+    text-align: center;
+}
+footer i {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+footer a {
+    text-decoration: none;
+    display: block;
+    letter-spacing: 1.9px;
+    text-align: center;
+    color: #ff5337;
+    font-size: 24px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+div.social-media-icons-footer {
+    text-align: center;
+    padding-top: 40px;
+}
+/* end footer */

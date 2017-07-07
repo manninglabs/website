@@ -1,9 +1,31 @@
+/* grid layout for technologies */
+
 #grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 45px;
 }
-.grid-item {
+.grid-item, .info-about-employee {
     background-color: #f5f3f6;
     padding: 20px;
 }
+
+/* end grid layout for technologies */
+
+/* grid layout for our-team */
+
+.our-team {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 45px;
+    margin-bottom: 30px;
+}
+.our-team .img {
+    grid-column: 1 / 2;
+}
+.info-about-employee {
+    grid-column: 2 / 3;
+    padding: 40px;
+}
+
+/* end grid layout for our-team */
