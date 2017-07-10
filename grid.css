@@ -9,7 +9,18 @@
     background-color: #f5f3f6;
     padding: 20px;
 }
-
+@media screen and (max-width: 1000px) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 15px;
+    } 
+}
+@media screen and (max-width: 800px) {
+    #grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+    } 
+}
 /* end grid layout for technologies */
 
 /* grid layout for our-team */
