@@ -43,12 +43,14 @@ $('.slider-for-mobile').slick({
 
 //accordeon-desctop
 $(document).ready(function(){
-    $(".accordeon p").hide().prev().click(function() {
+    $(".accordeon p").not(':first').hide();
+    $(".accordeon h3").click(function() {
         $(".accordeon p").slideUp();
         $(this).next().not(":visible").slideDown();
     });
 //accordeon-mobile
-    $(".accordeon-mobile").hide().prev().click(function() {
+    $(".accordeon-mobile").not(':first').hide();
+    $(".grid-item div").click(function() {
         $(".accordeon-mobile").slideUp();
         $(this).next().not(":visible").slideDown();
     });
