@@ -1,0 +1,4 @@
+# Hosting
+
+## Netlify Settings
+
