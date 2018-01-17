@@ -12,12 +12,12 @@ h1 {
     line-height: 0.8;
     letter-spacing: 1.6px;
     color: #000000;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 10px;
     margin-left: -3px;
 }
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.56;
     letter-spacing: 0.9px;
 }
@@ -30,7 +30,7 @@ h2 {
     margin-bottom: 0px;
 }
 h3 {
-    font-size: 100%;
+    font-size: 110%;
     font-weight: 900;
     letter-spacing: 2px;
     margin-bottom: 5px;
@@ -45,11 +45,11 @@ a.button {
     font-weight: 100;
     letter-spacing: 2.5px;
     background-color: #ff5337;
-    padding: 10px 50px;
+    padding: 12px 50px 10px 50px;
     color: rgba(255, 255, 255, 0.8);
     display: inline-block;
-    margin-top: 40px;
-    /*margin-bottom: 70px;*/
+    margin-top: 70px;
+    outline: none;
 }
 /* section#hero */
 #hero {
@@ -57,17 +57,31 @@ a.button {
     background-size: cover;
     padding-top: 20px;
 }
+#hero #logo img {
+    width: 15%;
+    height: 100%;
+    margin-left: -15px;
+}
 #hero p.tagline {
-    font-size: 200%;
+    font-size: 220%;
     margin-top: 0px;
     margin-bottom: 30px;
 }
 #hero .button {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+    #hero .button {
+        margin-bottom: 0px;
+    }
 }
 /* end section#hero */
 
 /* section#services */
+#services h2 {
+    margin-top: 85px;
+}
 p.subtitle {
     margin-top: 0px;
     font-size: 100%;
@@ -95,17 +109,19 @@ p.intro {
     outline: none;
     cursor: pointer;
 }
+#our-projects a.button {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+}
 #our-projects-mobile,
 #partners-mobile,
 #founding-team-mobile,
 #testimonials-mobile,
-#services-mobile {
+#services-mobile,
+.our-services-mobile {
     display: none;
 }
 /* classes from library(slick) */
-#our-projects .slick-current img{
-    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
-}
 .slick-dots li button {
     width: 15px;
     height: 15px;
@@ -125,8 +141,9 @@ p.intro {
 #our-projects .slider-for-projects p {
     text-align: center;
 }
-.slick-prev, .slick-next {
-    top: 44%;
+#our-projects .slick-prev, 
+#our-projects .slick-next {
+    top: 40%;
     width: 32px;
     height: 32px;
 }
@@ -153,7 +170,7 @@ p.intro {
     list-style: none;
     text-align: center;
     padding-left: 0px;
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 900;
     letter-spacing: 1.2px;
 }
@@ -168,9 +185,20 @@ p.intro {
 .info-about-employee .social-media-icons {
     text-align: right;
 }
-.info-about-employee .social-media-icons i {
+.info-about-employee .social-media-icons img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     margin-left: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+}
+#founding-team .slick-prev, 
+#founding-team .slick-next {
+    top: 45%;
+}
+.social-media-icons a {
+    color: #000;
+    outline: none;
 }
 .info-about-employee hr {
     height: 2px;
@@ -183,15 +211,41 @@ p.intro {
     color: #979797;
     margin: 0px;
 }
+.our-team,
+.slider-for-mobile div {
+    outline: none;
+}
+#founding-team .our-team .img img {
+    width: 350px;
+    height: auto;
+}
+#founding-team .our-team .img-artem img {
+    width: 320px;
+    height: auto;
+}
+#founding-team p {
+    font-size: 15px;
+}
+#founding-team p.intro {
+    font-size: 1.2em;
+}
+@media screen and (max-width: 992px) {
+    #founding-team p {
+        font-size: 14px;
+    } 
+}
 /* end our-team */
 
 /* testimonials */
-#testimonials #info {
+#testimonials .info {
     background-color: #f5f3f6;
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 40px;
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#testimonials .position-in-company {
+    font-size: 100%;
 }
 #testimonials h3,
 #testimonials p {
@@ -236,41 +290,78 @@ footer i {
     margin-left: 30px;
     margin-right: 30px;
 }
+#adress p {
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+#copyright p {
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
 footer a {
     text-decoration: none;
     display: block;
     letter-spacing: 1.9px;
     text-align: center;
     color: #ff5337;
-    font-size: 24px;
     margin-top: 50px;
     padding-bottom: 30px;
+    font-weight: 700;
 }
 div.social-media-icons-footer {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
+}
+div.social-media-icons-footer img,
+div.social-media-icons-footer a {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div.social-media-icons-footer img {
+    width: 25px;
+    height: 25px;
 }
 /* end footer */
 
 /* style for mobile version */
+#our-projects-mobile a {
+    outline: none;
+}
+@media screen and (max-width: 899px) {
+    #founding-team {
+        display: none;
+    } 
+}
 @media screen and (max-width: 767px) {
     section {
         padding-left: 0px;
-        padding-right: 0px;
-        
+        padding-right: 0px;     
     } 
     h1, h2, h3, p, p.intro {
         text-align: center;
         padding-left: 15px;
         padding-right: 15px;
     }
+    #services-mobile h3:hover {
+        color: #4A4A4A;
+    }
     h1 {
         margin-top: 50px;
         font-size: 200%;
     }
     h2 {
-        margin-top: 60px;
-        font-size: 130%;
+        margin-top: 130px;
+        font-size: 140%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    p {
+        font-size: 1em;
     }
     #hero {
         background-image: none;
@@ -282,37 +373,44 @@ div.social-media-icons-footer {
     #hero a {
         margin-top: 25px;
     }
+    a.button {
+        margin-top: 30px;
+    }
     br {
         display: none;
     }
     #logo {
         background-image: url("assets/image-mobile.png");
-        background-size: cover; 
+        background-size: cover;  
     }
-    #logo img {
+    #hero #logo img {
         padding: 20px 0px 120px 20px;
     }
-    .grid-item {
+    /*.grid-item {
         padding-top: 0px !important;
         padding-bottom: 0px !important; 
-    }
+    }*/
     #services-mobile h3,
     #services-mobile .subtitle {
         cursor: pointer;
     }
     #our-projects, 
-    #partners, 
-    #founding-team, 
+    #partners,  
     #testimonials,
     #faq,
     #testimonials-mobile .link,
-    #services {
+    #services,
+    .our-services {
         display: none;
     }
     #our-projects-mobile, #founding-team-mobile {
         display: block;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    #our-projects-mobile .link a.button{
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
     #our-projects-mobile .intro,
     #founding-team-mobile .intro,
@@ -321,8 +419,9 @@ div.social-media-icons-footer {
         padding-right: 0px;
     }
     #our-projects-mobile img {
-        width: 100%;
+        width: 280px;
         height: auto;
+        margin: 15px auto;
     }
     .slick-dots li.slick-active button,
     .slick-dots li button:hover {
@@ -331,26 +430,38 @@ div.social-media-icons-footer {
     }
     #partners-mobile,
     #testimonials-mobile,
-    #services-mobile {
+    #services-mobile,
+    .our-services-mobile {
         display: block;
     }
     #partners-mobile ul {
         column-count: 1;
     }
     #founding-team-mobile img {
-        display: block;
+        width: 200px;
+        height: auto;
         margin: 0 auto;
     }
-    .social-media-icons {
+    #founding-team-mobile .headshot-mobile {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .slider-for-team-mobile hr {
+        margin-top: 30px;
+    }
+    #founding-team-mobile .social-media-icons {
         text-align: center;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .social-media-icons i {
+    #founding-team-mobile .social-media-icons img {
         margin-left: 30px;
         margin-right: 30px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
     }
-    #testimonials #info {
+    #testimonials .info {
         background-color: #ffffff;
         padding-left: 0px;
         padding-right: 0px;
@@ -374,14 +485,15 @@ div.social-media-icons-footer {
     #testimonials-mobile .position-in-company {
         padding-left: 25px;
         padding-right: 25px;
+        font-size: 90%;
+    }
+    #services-mobile .subtitle {
+        font-size: 90%;
     }
     footer i {
         text-align: center;
         margin-left: 25px;
         margin-right: 25px;
-    }
-    div.social-media-icons-footer {
-        padding-top: 20px;
     }
     footer p {
         font-size: 23px;
@@ -389,9 +501,23 @@ div.social-media-icons-footer {
     }
     footer a {
         color: #2b2520;
-        font-size: 20px;
         margin-top: 40px;
         padding-bottom: 30px;
     }
+    #adress p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+    #copyright p {
+        font-size: 11px;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+    }
 }
+@media screen and (max-width: 400px) {
+    #hero #logo img {
+        padding-left: 30px;
+    }
+}
+
 /* end style for mobile version */
