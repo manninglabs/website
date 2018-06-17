@@ -79,9 +79,6 @@ a.button {
 /* end section#hero */
 
 /* section#services */
-#services h2 {
-    margin-top: 85px;
-}
 p.subtitle {
     margin-top: 0px;
     font-size: 100%;
@@ -104,6 +101,9 @@ p.intro {
 #our-projects .slider-for-projects img {
     max-width: 100%;
     height: auto;
+}
+#our-projects h2 {
+    margin-top: 85px;
 }
 .sl1, .sl2, .sl3, .sl4 {
     outline: none;
