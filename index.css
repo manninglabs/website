@@ -29,6 +29,10 @@ h2 {
     margin-top: 170px;
     margin-bottom: 0px;
 }
+a { 
+    color: #888;
+    text-decoration: none;
+}
 h3 {
     font-size: 110%;
     font-weight: 900;
